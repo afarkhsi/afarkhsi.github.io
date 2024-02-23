@@ -1,0 +1,40 @@
+.header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.header_nav {
+  background-image: url('./../../assets/creative-light.jpg');
+  background-position: 50% 55%;
+  background-size: cover;
+  height: 50px;
+  /* font-family: 'Zen Dots', sans-serif; */
+  font-family: 'Righteous', sans-serif;
+  font-size: 18px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+}
+
+.header_title {
+  font-family: 'Righteous', sans-serif;
+  font-size: 20px;
+  background-image: linear-gradient(
+    90deg,
+    rgba(255, 0, 77, 1) 0%,
+    rgba(0, 255, 209, 1) 100%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: #00000000;
+  height: 50px;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  text-align: center;
+}
+
+.header_nav_link {
+  text-decoration: none;
+  color: white;
+}

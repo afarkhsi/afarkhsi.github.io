@@ -1,14 +1,19 @@
-import React from 'react';
+import './style.css';
 
 const NavBar = () => {
   return (
-    <section>
-      <div>A.Farkhsi</div>
-      <div>
-        <a href="/">HOME</a>
-        <a href="/">ABOUT</a>
-        <a href="/">PROJECTS</a>
-        <a href="/">CONTACTS</a>
+    <section className="header">
+      <div className="header_title">A.Farkhsi</div>
+      <div className="header_nav">
+        <a className="header_nav_link" href="/">
+          HOME
+        </a>
+        <a className="header_nav_link" href="/">
+          PROJECTS
+        </a>
+        <a className="header_nav_link" href="/">
+          CONTACTS
+        </a>
       </div>
     </section>
   );
