@@ -1,4 +1,3 @@
-import { Link } from 'react-router-dom';
 import React from 'react';
 
 const Header = () => {
@@ -6,10 +5,10 @@ const Header = () => {
     <section>
       <div>A.Farkhsi</div>
       <div>
-        <Link>HOME</Link>
-        <Link>ABOUT</Link>
-        <Link>PROJECTS</Link>
-        <Link>CONTACTS</Link>
+        <a href="/">HOME</a>
+        <a href="/">ABOUT</a>
+        <a href="/">PROJECTS</a>
+        <a href="/">CONTACTS</a>
       </div>
     </section>
   );
