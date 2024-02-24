@@ -1,5 +1,97 @@
+.about {
+  margin: auto 100px;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+.about_title {
+  font-size: 56px;
+  max-width: 700px;
+  width: 100%;
+  background-position: 70% 15%;
+}
+
+.about_description_title {
+  font-family: 'Zen Dots', sans-serif;
+  font-size: 30px;
+}
+
+.about_title,
+.about_description_title,
+.about_description_link {
+  font-family: 'Zen Dots', sans-serif;
+  background-image: url('./../../assets/creative-light.jpg');
+  background-size: cover;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: #00000000;
+}
+
+.about_description_title {
+  font-size: 30px;
+  background-position: 70% 55%;
+}
+
 .about_description_container {
   background-color: #1b1b1b;
   color: white;
+  max-width: 60%;
+  height: 190px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-weight: 500;
+}
+
+.about_description_container_languages {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  padding-left: 30px;
+}
+
+.about_description_container_languages span {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.about_description_container_languages span p {
+  margin: 0;
+}
+
+.about_description_details,
+.about_description_link {
+  font-family: 'Righteous', sans-serif;
+}
+
+.about_description_details {
+  font-size: 20px;
+  max-width: 600px;
+  width: 100%;
+}
+
+.about_description_link {
+  font-size: 28px;
+  background-position: 70% 65%;
+  text-align: center;
+}
+
+.about_description_link:hover {
+  background-position: 10% 15%;
+}
+
+.language-logo {
+  width: 20px;
+}
+
+.bg-logo {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  z-index: -1;
   max-width: 50%;
+  object-fit: contain;
+  right: 0;
+  filter: invert(1);
+  opacity: 43%;
+  box-shadow: 10px 10px;
 }
