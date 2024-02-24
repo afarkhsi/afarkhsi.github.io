@@ -17,4 +17,5 @@ code {
   /** test ajour css centrer sur toute la page*/
   display: flex;
   flex-direction: column;
+  position: relative;
 }

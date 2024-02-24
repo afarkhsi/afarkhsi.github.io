@@ -3,6 +3,7 @@ import ReactLogo from './../../assets/react-logo.png';
 import JsLogo from './../../assets/JavaScript-logo.png';
 import NodeLogo from './../../assets/node-js-log.png';
 import Logo from './../../assets/logo.png';
+import TsLogo from './../../assets/ts-logo.png';
 
 const About = () => {
   return (
@@ -17,6 +18,10 @@ const About = () => {
             <span>
               <img src={JsLogo} alt="logo js" className="language-logo" />
               <p>JavaScript</p>
+            </span>
+            <span>
+              <img src={TsLogo} alt="logo ts" className="language-logo" />
+              <p>TypeScript</p>
             </span>
             <span>
               <img src={ReactLogo} alt="logo react" className="language-logo" />

@@ -1,0 +1,25 @@
+.networks {
+  background-color: #e0dfdf38;
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  top: 50%;
+  width: 65px;
+  height: 500px;
+  margin-top: -250px; /* Negative half of height. */
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  border-radius: 0 10px 10px 0;
+}
+
+.networks_link {
+  width: 100%;
+  text-align: center;
+}
+.networks_link_logo {
+  transition: all 0.3s ease-in-out;
+}
+.networks_link_logo:hover {
+  transform: scale(0.8);
+}
