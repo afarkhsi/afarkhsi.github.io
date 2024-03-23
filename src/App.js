@@ -10,9 +10,9 @@ function App() {
         <NavBar />
         <SocialMedias />
         <Routes>
-          <Route path="/" element={<HomePage />} />
-          <Route path="/mesprojets" element={<HomePage />} />
-          <Route path="/contacts" element={<HomePage />} />
+          <Route path="/portfolio/" element={<HomePage />} />
+          <Route path="/portfolio/mesprojets" element={<HomePage />} />
+          <Route path="/portfolio/contacts" element={<HomePage />} />
         </Routes>
       </Router>
     </>

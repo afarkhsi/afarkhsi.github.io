@@ -40,7 +40,7 @@ const About = () => {
           web performantes et dynamiques.
         </p>
       </div>
-      <a className="about_description_link" href="/mesprojets">
+      <a className="about_description_link" href="/portfolio/mesprojets">
         MES PROJETS
       </a>
     </section>
