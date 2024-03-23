@@ -3,14 +3,28 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
-import { HashRouter as Router } from 'react-router-dom';
+// import { HashRouter, Router } from 'react-router-dom';
+// import { BrowserRouter } from 'react-router-dom';
+import { HashRouter, Routes, Route } from 'react-router-dom';
+import NavBar from './components/NavBar/NavBar';
+import SocialMedias from './components/SocialMedias/SocialMedias';
+import HomePage from './pages/home';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <Router>
-      <App />
-    </Router>
+    <NavBar />
+    <SocialMedias />
+    <HashRouter>
+      <Routes>
+        <Route path="/mesprojets" element={<App />} />
+        <Route path="/contacts" element={<HomePage />} />
+        <Route exact path="/" element={<HomePage />} />
+      </Routes>
+      {/* <Router> */}
+      {/* <App /> */}
+      {/* </Router> */}
+    </HashRouter>
   </React.StrictMode>
 );
 
