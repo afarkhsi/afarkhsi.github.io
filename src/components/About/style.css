@@ -48,6 +48,7 @@
 }
 
 .about_description_container_languages {
+  font-family: 'Righteous', sans-serif;
   display: flex;
   flex-direction: column;
   gap: 0.5rem;
@@ -79,10 +80,16 @@
   background-position: 70% 65%;
   text-align: center;
   margin-top: 50px;
+  transition: all 0.5s ease-in-out;
+  border: 2px solid black;
+  border-radius: 3px;
+  max-width: 250px;
+  width: 100%;
+  align-self: center;
 }
 
 .about_description_link:hover {
-  background-position: 10% 15%;
+  background-position: 10% 45%;
 }
 
 .language-logo {

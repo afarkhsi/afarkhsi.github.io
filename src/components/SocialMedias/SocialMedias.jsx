@@ -16,7 +16,11 @@ const SocialMedias = () => {
           alt="logo linkedin"
         />
       </a>
-      <a className="networks_link" href="/">
+      <a
+        className="networks_link"
+        href="https://github.com/afarkhsi"
+        target="_blank"
+      >
         <img className="networks_link_logo" src={Github} alt="logo github" />
       </a>
     </div>

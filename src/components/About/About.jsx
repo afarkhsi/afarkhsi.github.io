@@ -32,15 +32,15 @@ const About = () => {
               <p>Node.js</p>
             </span>
           </div>
-          &lt; /&gt;
+          &lt;/&gt;
         </div>
         <p className="about_description_details">
-          Intéressé par la création et le development web, je mets en pratique
-          mes appetences et compétences pour produire des applications web
-          performantes
+          Captivé par la création et le dévelopment web, je mets en pratique mes
+          conaissances ainsi que mes compétences pour produire des applications
+          web performantes et dynamiques.
         </p>
       </div>
-      <a className="about_description_link" href="/">
+      <a className="about_description_link" href="/mesprojets">
         MES PROJETS
       </a>
     </section>

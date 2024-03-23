@@ -1,13 +1,20 @@
-import About from './components/About/About';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import NavBar from './components/NavBar/NavBar';
 import SocialMedias from './components/SocialMedias/SocialMedias';
+import HomePage from './pages/home';
 
 function App() {
   return (
     <>
-      <NavBar />
-      <About />
-      <SocialMedias />
+      <Router>
+        <NavBar />
+        <SocialMedias />
+        <Routes>
+          <Route path="/" element={<HomePage />} />
+          <Route path="/mesprojets" element={<HomePage />} />
+          <Route path="/contacts" element={<HomePage />} />
+        </Routes>
+      </Router>
     </>
   );
 }
