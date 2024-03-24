@@ -1,6 +1,6 @@
-import Twitter from './../../assets/twitter.png';
-import Linkedin from './../../assets/linkedin.png';
-import Github from './../../assets/github.png';
+import Twitter from './../../assets/logo/twitter.png';
+import Linkedin from './../../assets/logo/linkedin.png';
+import Github from './../../assets/logo/github.png';
 import './style.css';
 
 const SocialMedias = () => {

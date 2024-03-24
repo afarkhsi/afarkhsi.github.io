@@ -9,6 +9,7 @@ import { HashRouter, Routes, Route } from 'react-router-dom';
 import NavBar from './components/NavBar/NavBar';
 import SocialMedias from './components/SocialMedias/SocialMedias';
 import HomePage from './pages/home';
+import Projects from './pages/projects';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -17,9 +18,9 @@ root.render(
     <SocialMedias />
     <HashRouter>
       <Routes>
-        <Route path="/mesprojets" element={<App />} />
+        <Route path="/mesprojets" element={<Projects />} />
         <Route path="/contacts" element={<HomePage />} />
-        <Route exact path="/" element={<HomePage />} />
+        <Route exact path="/" element={<App />} />
       </Routes>
       {/* <Router> */}
       {/* <App /> */}

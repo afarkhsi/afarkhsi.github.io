@@ -19,3 +19,12 @@ code {
   flex-direction: column;
   position: relative;
 }
+
+.cards {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 1rem;
+  flex: 1;
+  align-self: center;
+  align-items: center;
+}

@@ -1,9 +1,9 @@
 import './style.css';
-import ReactLogo from './../../assets/react-logo.png';
-import JsLogo from './../../assets/JavaScript-logo.png';
-import NodeLogo from './../../assets/node-js-log.png';
-import Logo from './../../assets/logo.png';
-import TsLogo from './../../assets/ts-logo.png';
+import ReactLogo from './../../assets/logo/react-logo.png';
+import JsLogo from './../../assets/logo/JavaScript-logo.png';
+import NodeLogo from './../../assets/logo/node-js-log.png';
+import Logo from './../../assets/logo/logo.png';
+import TsLogo from './../../assets/logo/ts-logo.png';
 
 const About = () => {
   return (
@@ -40,7 +40,7 @@ const About = () => {
           web performantes et dynamiques.
         </p>
       </div>
-      <a className="about_description_link" href="/portfolio/mesprojets">
+      <a className="about_description_link" href="#/mesprojets">
         MES PROJETS
       </a>
     </section>

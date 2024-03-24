@@ -24,7 +24,7 @@
 .about_description_title,
 .about_description_link {
   font-family: 'Zen Dots', sans-serif;
-  background-image: url('./../../assets/creative-light.jpg');
+  background-image: url('./../../assets/images/creative-light.jpg');
   background-size: cover;
   -webkit-background-clip: text;
   -webkit-text-fill-color: #00000000;
