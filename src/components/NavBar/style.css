@@ -49,3 +49,13 @@
   text-decoration: underline;
   color: rgb(241, 151, 151);
 }
+
+a:hover,
+a:focus,
+a:active {
+  text-decoration: underline;
+}
+
+a.active {
+  color: black;
+}

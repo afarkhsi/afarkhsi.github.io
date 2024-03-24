@@ -25,6 +25,11 @@ code {
   grid-template-columns: 1fr 1fr 1fr;
   gap: 1rem;
   flex: 1;
+  padding: 20px 60px;
+  justify-items: center;
+  /* width: 100%; */
+  /* background-color: #f4f4f4; */
   align-self: center;
   align-items: center;
+  justify-items: center;
 }

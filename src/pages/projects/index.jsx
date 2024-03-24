@@ -14,6 +14,7 @@ const Projects = () => {
             title={card.title}
             description={card.description}
             technologie={card.technologie}
+            link={card.link}
           />
         ))}
     </section>
