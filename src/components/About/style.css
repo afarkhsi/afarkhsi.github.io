@@ -108,3 +108,73 @@
   opacity: 43%;
   box-shadow: 10px 10px;
 }
+
+@media (max-width: 900px) {
+  .about {
+    padding: 0;
+  }
+
+  .about_title {
+    font-size: 43px;
+  }
+
+  .about_description_title {
+    font-size: 25px;
+  }
+
+  .about_description_details {
+    font-size: 15px;
+  }
+
+  .about_description_container {
+    max-width: 70%;
+  }
+}
+
+@media (max-width: 700px) {
+  .about {
+    margin: 0 30px;
+    gap: 4rem;
+  }
+
+  .about_title {
+    font-size: 38px;
+    text-align: center;
+  }
+
+  .about_description_title {
+    font-size: 20px;
+  }
+
+  .about_description_container {
+    font-size: 13px;
+    max-width: 80%;
+  }
+
+  .language-logo {
+    width: 15px;
+  }
+}
+
+@media (max-width: 500px) {
+  .about {
+    margin: 0 20px;
+  }
+
+  .about_title {
+    font-size: 30px;
+  }
+
+  .about_description_title {
+    font-size: 20px;
+  }
+
+  .about_description_container {
+    font-size: 13px;
+    max-width: 100%;
+  }
+
+  .language-logo {
+    width: 15px;
+  }
+}

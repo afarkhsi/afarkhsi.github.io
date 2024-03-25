@@ -4,12 +4,14 @@ import Kasa from './../assets/images/website-kasa.png';
 import Argentbank from './../assets/images/website-argentbank.png';
 import Sportsee from './../assets/images/website-sportsee.png';
 import Fisheye from './../assets/images/website-fisheye.png';
+import Hrnet from './../assets/images/website-hrnet.png';
 import ReactLogo from './../assets/logo/react-logo.png';
 import JsLogo from './../assets/logo/JavaScript-logo.png';
 import SassLogo from './../assets/logo/sass.png';
 import CssLogo from './../assets/logo/css.png';
 import HtmlLogo from './../assets/logo/html.png';
 import ReduxLogo from './../assets/logo/redux.png';
+import TsLogo from './../assets/logo/ts-logo.png';
 
 const DATA = [
   {
@@ -60,6 +62,14 @@ const DATA = [
     description: `Développer un site “mobile first” qui répertorie les menus de restaurants gastronomiques.`,
     technologie: [HtmlLogo, SassLogo],
     link: 'https://github.com/afarkhsi/OHMYFOOD.git',
+  },
+  {
+    id: 7,
+    image: Hrnet,
+    title: 'Hrnet',
+    description: `WealthHealth utilise une application web interne (HRnet) afin de gerer les dossiers de leurs employés.La direction de WealthHealth a fait part de sa volonté de convertir le site en React et remplacer les plugin JQuery utilisés sur la version static par des composants réutilisables.`,
+    technologie: [HtmlLogo, CssLogo, JsLogo, TsLogo, ReactLogo, ReduxLogo],
+    link: 'https://github.com/afarkhsi/HRnet-WealthHealth.git',
   },
 ];
 

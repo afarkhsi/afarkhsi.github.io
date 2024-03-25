@@ -1,7 +1,8 @@
 .card {
-  /* max-width: 400px; */
+  max-width: 500px;
   width: 100%;
-  height: 100%;
+  height: 400px;
+  /* height: 100%; */
   /* height: 300px; */
   /* border-radius: 10px;
   border: 2px solid black; */
@@ -12,12 +13,14 @@
   justify-content: space-around;
   position: relative;
   box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  border: 1px solid rgba(149, 157, 165, 0.2);
+  /* border-radius: 5px; */
 }
 
 .card_img {
   object-fit: cover;
   width: 100%;
-  height: 300px;
+  height: 100%;
   overflow: hidden;
 }
 .card_description {
@@ -33,6 +36,7 @@
   height: 100%;
   width: 100%;
   transition: all 0.3s ease-in-out;
+  padding: 0 20px;
 }
 .card_description_title {
   font-family: 'Zen Dots', sans-serif;
@@ -40,12 +44,13 @@
   font-weight: 800;
   transition: all 0.3s ease-in-out;
   text-decoration: none;
-  color: black;
+  color: rgb(255, 255, 255);
 }
 .card_description_content {
   font-family: 'Righteous', sans-serif;
-  color: rgb(82, 82, 82);
+  color: rgb(194, 194, 194);
   font-size: 14px;
+  padding: 0 20px;
 }
 
 .card_technologie {
@@ -75,5 +80,23 @@
   transform: translateY(0px);
   justify-content: center;
   opacity: 1;
-  background: rgba(255, 255, 255, 0.75);
+  background: rgba(0, 0, 0, 0.55);
+}
+
+@media (max-width: 500px) {
+  .card {
+    height: 200px;
+  }
+
+  .card_description_title {
+    font-size: 20px;
+  }
+
+  .card_description_content {
+    font-size: 10px;
+  }
+
+  .card_technologie_logo {
+    width: 30px;
+  }
 }

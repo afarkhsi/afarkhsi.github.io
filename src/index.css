@@ -21,15 +21,29 @@ code {
 }
 
 .cards {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  /* display: grid;
+  grid-template-columns: 1fr 1fr 1fr; */
   gap: 1rem;
-  flex: 1;
-  padding: 20px 60px;
-  justify-items: center;
+  /* flex: 1; */
+  padding: 20px 70px;
   /* width: 100%; */
   /* background-color: #f4f4f4; */
-  align-self: center;
+  /* align-self: center;
   align-items: center;
-  justify-items: center;
+  justify-items: center; */
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+}
+
+@media (max-width: 700px) {
+  .networks {
+    opacity: 0;
+  }
+
+  .cards {
+    padding: 20px 20px;
+  }
 }
