@@ -100,3 +100,21 @@
     width: 30px;
   }
 }
+
+@media (max-width: 300px) {
+  .card {
+    height: 170px;
+  }
+
+  .card_description_title {
+    font-size: 15px;
+  }
+
+  .card_description_content {
+    font-size: 8px;
+  }
+
+  .card_technologie_logo {
+    width: 20px;
+  }
+}

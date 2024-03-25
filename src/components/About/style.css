@@ -178,3 +178,57 @@
     width: 15px;
   }
 }
+
+@media (max-width: 400px) {
+  .about_title {
+    font-size: 22px;
+  }
+
+  .about_description_title {
+    font-size: 17px;
+  }
+
+  .about_description_container {
+    font-size: 12px;
+    max-width: 100%;
+  }
+
+  .language-logo {
+    width: 13px;
+  }
+
+  .about_description_details {
+    font-size: 13px;
+  }
+
+  .about_description_link {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 300px) {
+  .about_title {
+    font-size: 20px;
+  }
+
+  .about_description_title {
+    font-size: 15px;
+  }
+
+  .about_description_container {
+    font-size: 11px;
+    max-width: 100%;
+  }
+
+  .language-logo {
+    width: 15px;
+  }
+
+  .about_description_details {
+    font-size: 11px;
+  }
+
+  .about_description_link {
+    font-size: 20px;
+  }
+}
