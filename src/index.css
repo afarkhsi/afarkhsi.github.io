@@ -14,7 +14,7 @@ code {
 }
 
 #root {
-  min-height: 100vh;
+  min-height: 91vh;
   /** test ajour css centrer sur toute la page*/
   display: flex;
   flex-direction: column;
@@ -37,6 +37,18 @@ code {
   justify-content: center;
   align-items: center;
   margin: auto;
+}
+
+.contact {
+  max-width: 600px;
+  width: 100%;
+  flex: 1;
+  align-self: center;
+  align-content: center;
+}
+
+.validation-message {
+  display: none;
 }
 
 @media (max-width: 700px) {

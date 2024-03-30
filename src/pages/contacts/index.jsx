@@ -1,12 +1,21 @@
+import Form from '../../components/Form/Form';
+
 const Contact = () => {
+  const formData = document.querySelectorAll('.formData');
+  formData.forEach((data) => data.setAttribute('data-error-visible', 'false'));
   return (
-    <section>
-      <div>
-        <span>logo1</span>
-        <span>logo2</span>
-        <span>logo3</span>
+    <section className="contact">
+      <Form />
+      <div className="validation-message">
+        <h2>Votre inscription a bien été prise en compte !</h2>
+        <br />
+        <input
+          className="btn-terminer"
+          id="close-validation"
+          type="submit"
+          value="Terminer"
+        />
       </div>
-      <div></div>
     </section>
   );
 };
