@@ -198,7 +198,7 @@ function Form() {
 
       <div className="formData">
         <label htmlFor="message">Message</label>
-        <input
+        <textarea
           className="text-control"
           name="user_message"
           id="message"
