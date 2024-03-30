@@ -67,7 +67,7 @@ const DATA = [
     id: 7,
     image: Hrnet,
     title: 'Hrnet',
-    description: `WealthHealth utilise une application web interne (HRnet) afin de gerer les dossiers de leurs employés.La direction de WealthHealth a fait part de sa volonté de convertir le site en React et remplacer les plugin JQuery utilisés sur la version static par des composants réutilisables.`,
+    description: `HRnet gère les dossiers des employés de WealthHealth, il ont fait part de leur volonté de convertir le site en React et remplacer les plugin JQuery utilisés par des composants réutilisables.`,
     technologie: [HtmlLogo, CssLogo, JsLogo, TsLogo, ReactLogo, ReduxLogo],
     link: 'https://github.com/afarkhsi/HRnet-WealthHealth.git',
   },
