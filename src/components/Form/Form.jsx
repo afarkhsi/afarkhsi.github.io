@@ -1,4 +1,4 @@
-import React, { useRef, useState } from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 import emailjs from '@emailjs/browser';
 
 import './style.css';
@@ -14,14 +14,14 @@ function Form() {
   const [lastNameErrorMessage, setLastNameErrorMessage] = useState('');
   const [emailErrorMessage, setEmailErrorMessage] = useState('');
   const [messageErrorMessage, setMessageErrorMessage] = useState('');
-  const [formValidation, setFormValidation] = useState(false);
+  const [formValidation, setFormValidation] = useState();
 
   //   const prenomValide = () => prenom.value.trim().length >= 2;
   //   const nomValide = () => nom.value.trim().length >= 2;
   //   const messageValide = () => message.value.trim().length >= 20;
   let regexEmail =
     /^[a-zA-Z][a-zA-Z0-9\-\_\.]+@[a-zA-Z0-9]{2,}\.[a-zA-Z0-9]{2,}$/;
-  const emailValide = () => regexEmail.test(email.value);
+  const emailValide = () => regexEmail.test(email.valueOf());
 
   //   const validate = () => {
   //     let erreur = false;
@@ -58,39 +58,107 @@ function Form() {
   //       formValidation.style.display = 'block';
   //     }
   //   };
-  //   console.log('test:', email.valueOf());
-  const validate = () => {
+  console.log('test:', firstName.length);
+
+  useEffect(() => {
     if (
-      firstName.trim().length < 2 &&
-      lastName.trim().length < 2 &&
-      message.trim().length < 20
+      firstName.length > 0 &&
+      lastName.length > 0 &&
+      message.length > 0 &&
+      emailValide()
     ) {
+      setFormValidation(true);
+      //   if (formValidation === true) {
+      console.log('le form est complet', formValidation);
+      //     console.log(`Message envoyé !
+      //       Prénom:${firstName}
+      //       Nom:${lastName}
+      //       Email:${email}
+      //       Message:${message}
+
+      //       // `);
+      //     // emailjs
+      //     //   .sendForm('service_kyddk1y', 'template_inavdg6', form.current, {
+      //     //     publicKey: 'eIE9xQJLjObkTw9_W',
+      //     //   })
+      //     //   .then(
+      //     //     () => {
+      //     //       alert('Message envoyé');
+      //     //       // e.target.reset();
+      //     //     },
+      //     //     (error) => {
+      //     //       alert('FAILED...', error.text);
+      //     //     }
+      //     //   );
+      //   }
+    } else {
       setFormValidation(false);
       console.log('erreur dans le form', formValidation);
-    } else {
-      setFormValidation(true);
-      console.log('le form est complet', formValidation);
     }
-  };
+  }, [firstName, lastName, message, emailValide, formValidation, email]);
+  //   const validate = () => {
+
+  //     if (
+  //       firstName.length > 0 &&
+  //       lastName.length > 0 &&
+  //       message.length > 0 &&
+  //       emailValide()
+  //     ) {
+  //       setFormValidation(true);
+  //       if (formValidation === true) {
+  //         // console.log('le form est complet', formValidation);
+  //         console.log(`Message envoyé !
+  //         Prénom:${firstName}
+  //         Nom:${lastName}
+  //         Email:${email}
+  //         Message:${message}
+
+  //         // `);
+  //         // emailjs
+  //         //   .sendForm('service_kyddk1y', 'template_inavdg6', form.current, {
+  //         //     publicKey: 'eIE9xQJLjObkTw9_W',
+  //         //   })
+  //         //   .then(
+  //         //     () => {
+  //         //       alert('Message envoyé');
+  //         //       // e.target.reset();
+  //         //     },
+  //         //     (error) => {
+  //         //       alert('FAILED...', error.text);
+  //         //     }
+  //         //   );
+  //       }
+  //     } else {
+  //       setFormValidation(false);
+  //       //   console.log('erreur dans le form', formValidation);
+  //     }
+  //   };
 
   const sendEmail = (e) => {
     e.preventDefault();
-    validate();
+    // validate();
+    console.log('etat de formValidation au clic:', formValidation);
     if (formValidation === true) {
-      console.log(firstName, lastName, email, message);
-      //   emailjs
-      //     .sendForm('service_kyddk1y', 'template_inavdg6', form.current, {
-      //       publicKey: 'eIE9xQJLjObkTw9_W',
-      //     })
-      //     .then(
-      //       () => {
-      //         alert('Message envoyé');
-      //         e.target.reset();
-      //       },
-      //       (error) => {
-      //         alert('FAILED...', error.text);
-      //       }
-      //     );
+      console.log(`Message envoyé !
+      Prénom:${firstName}
+      Nom:${lastName}
+      Email:${email}
+      Message:${message}
+
+      `);
+      emailjs
+        .sendForm('service_kyddk1y', 'template_inavdg6', form.current, {
+          publicKey: 'eIE9xQJLjObkTw9_W',
+        })
+        .then(
+          () => {
+            alert('Message envoyé');
+            e.target.reset();
+          },
+          (error) => {
+            alert('FAILED...', error.text);
+          }
+        );
     }
     // console.log(firstName, lastName, email, message);
     // emailjs
@@ -123,6 +191,7 @@ function Form() {
               setFirstName(e.target.value);
               setFirstNameErrorMessage('');
             } else if (e.target.value.trim().length < 2) {
+              setFirstName('');
               setFirstNameErrorMessage(
                 'Veuillez renseigner au moins 2 caractères'
               );
@@ -150,6 +219,7 @@ function Form() {
               setLastName(e.target.value);
               setLastNameErrorMessage('');
             } else {
+              setLastName('');
               setLastNameErrorMessage(
                 'Veuillez renseigner au moins 2 caractères'
               );
@@ -178,6 +248,7 @@ function Form() {
               setEmail(e.target.value);
               setEmailErrorMessage('');
             } else {
+              setEmail('');
               setEmailErrorMessage(
                 'Veuillez renseigner une adresse email valide'
               );
@@ -205,6 +276,7 @@ function Form() {
               setMessage(e.target.value);
               setMessageErrorMessage('');
             } else {
+              setMessage('');
               setMessageErrorMessage(
                 'Votre message doit contenir au moins 20 caractères'
               );
