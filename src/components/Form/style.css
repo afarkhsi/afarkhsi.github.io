@@ -38,7 +38,7 @@ textarea {
   padding: 10px 15px;
   /* margin-bottom: 10px; */
   font-size: 14px;
-  border: #ee6900 2px solid;
+  border: #5a5a5a 2px solid;
 }
 
 label {
@@ -78,7 +78,7 @@ input[type='submit']:hover {
     rgba(255, 0, 77, 1) 0%,
     rgba(0, 255, 209, 1) 100%
   );
-  transform: scale(1.1);
+  transform: scale(1.03);
 }
 
 button[type='submit']:active,

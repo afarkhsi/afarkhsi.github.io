@@ -9,7 +9,11 @@ const SocialMedias = () => {
       <a className="networks_link" href="/">
         <img className="networks_link_logo" src={Twitter} alt="logo twitter" />
       </a>
-      <a className="networks_link" href="/">
+      <a
+        className="networks_link"
+        href="https://www.linkedin.com/in/abdourrahman-farkhsi-36a294139/"
+        target="_blank"
+      >
         <img
           className="networks_link_logo"
           src={Linkedin}

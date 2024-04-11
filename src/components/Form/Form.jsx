@@ -71,7 +71,7 @@ function Form() {
     ) {
       setFormValidation(true);
       //   if (formValidation === true) {
-      //   console.log('le form est complet', formValidation);
+      console.log('le form est complet', formValidation);
       //     console.log(`Message envoyé !
       //       Prénom:${firstName}
       //       Nom:${lastName}
@@ -82,7 +82,7 @@ function Form() {
       //   }
     } else {
       setFormValidation(false);
-      //   console.log('erreur dans le form', formValidation);
+      console.log('erreur dans le form', formValidation);
     }
   }, [firstName, lastName, message, formValidation, email]);
 
@@ -97,19 +97,19 @@ function Form() {
       Message:${message}
 
       `);
-      //   emailjs
-      //     .sendForm('service_kyddk1y', 'template_inavdg6', form.current, {
-      //       publicKey: 'eIE9xQJLjObkTw9_W',
-      //     })
-      //     .then(
-      //       () => {
-      //         alert('Message envoyé');
-      //         e.target.reset();
-      //       },
-      //       (error) => {
-      //         alert('FAILED...', error.text);
-      //       }
-      //     );
+      emailjs
+        .sendForm('service_kyddk1y', 'template_inavdg6', form.current, {
+          publicKey: 'eIE9xQJLjObkTw9_W',
+        })
+        .then(
+          () => {
+            alert('Message envoyé !');
+            e.target.reset();
+          },
+          (error) => {
+            alert('FAILED TO SEND EMAIL', error.text);
+          }
+        );
     }
   };
 

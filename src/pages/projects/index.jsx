@@ -2,7 +2,7 @@ import Card from '../../components/Card/Card';
 import DATA from '../../data/data';
 
 const Projects = () => {
-  console.log(DATA);
+  // console.log(DATA);
   return (
     <section className="cards">
       {DATA &&
